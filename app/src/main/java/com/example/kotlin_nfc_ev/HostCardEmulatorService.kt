@@ -12,7 +12,7 @@ class HostCardEmulatorService: HostApduService() {
         const val STATUS_FAILED = "6F00"
         const val CLA_NOT_SUPPORTED = "6E00"
         const val INS_NOT_SUPPORTED = "6D00"
-        val AID = R.string.aid_code
+        const val AID = "A0000001020304"
         const val SELECT_INS = "A4"
         const val DEFAULT_CLA = "00"
         const val MIN_APDU_LENGTH = 12
@@ -51,7 +51,7 @@ class HostCardEmulatorService: HostApduService() {
 
             val dataStore = DataStoreUtil(this)
             val uid = dataStore.getID()
-            return ByteArrayHexUtil.hexStringToByteArray(uid)
+            return uid.toByteArray()
 
         } else {
             return ByteArrayHexUtil.hexStringToByteArray(STATUS_FAILED)
