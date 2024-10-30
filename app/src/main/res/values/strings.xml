@@ -8,4 +8,5 @@
     <string name="dialog_no">No</string>
     <string name="nfc_unsupported">Device does not support NFC? :-(</string>
     <string name="id_hint">Field to enter id</string>
+    <string name="aid_code">A0000001020304</string>
 </resources>
