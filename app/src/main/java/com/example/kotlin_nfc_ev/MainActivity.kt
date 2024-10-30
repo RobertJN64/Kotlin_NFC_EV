@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             NFCDialog(this).showNFCUnsupported()
         }
 
-        textView.doAfterTextChanged { dataStore.saveID(textView.text as String) }
+        textView.doAfterTextChanged { dataStore.saveID(textView.getText().toString()) }
     }
 
 }
