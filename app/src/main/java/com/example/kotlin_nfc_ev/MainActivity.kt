@@ -4,6 +4,7 @@ import android.nfc.NfcAdapter
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doAfterTextChanged
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,9 +26,7 @@ class MainActivity : AppCompatActivity() {
             NFCDialog(this).showNFCUnsupported()
         }
 
-
-
-
+        textView.doAfterTextChanged { dataStore.saveID(textView.text as String) }
     }
 
 }

@@ -7,4 +7,5 @@
     <string name="dialog_yes">Yes</string>
     <string name="dialog_no">No</string>
     <string name="nfc_unsupported">Device does not support NFC? :-(</string>
+    <string name="id_hint">Field to enter id</string>
 </resources>

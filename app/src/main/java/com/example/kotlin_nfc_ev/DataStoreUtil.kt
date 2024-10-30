@@ -16,7 +16,7 @@ class DataStoreUtil(context: Context) {
         return uid
     }
 
-    private fun saveID(uid: String) {
+    fun saveID(uid: String) {
         val editor = prefs!!.edit()
         editor.putString("uid", uid)
         editor.apply()
